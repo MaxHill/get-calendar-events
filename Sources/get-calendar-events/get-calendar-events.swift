@@ -122,7 +122,7 @@ public struct GetEvents {
 
 
         let encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted
+        // encoder.outputFormatting = .prettyPrinted
         do {
             let data = try encoder.encode(events)
             print(String(data: data, encoding: .utf8)!)
